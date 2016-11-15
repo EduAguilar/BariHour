@@ -1,0 +1,30 @@
+<style>
+#background {
+	background: url("{{item.image}}") ;
+	background-size: 100% 95%;
+}
+
+#transbox {
+	margin: 30px;
+  	background-color: #ffffff;
+  	border: 1px solid black;
+  	opacity: 0.6;
+  	filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+#transbox p {
+  	margin: 5%;
+  	font-weight: bold;
+}
+</style>
+
+<ion-view >
+  <ion-content id="background">
+  	<div id="transbox">
+      <h2 id = "title_Name">{{item.name}}</h2>
+		  <p>{{item.horario}}</p>
+		  <p>Happy hour de {{item.start|date:'HH'}} a {{item.end|date:'HH'}}</p>
+    </div>			
+  </ion-content>
+</ion-view>
+

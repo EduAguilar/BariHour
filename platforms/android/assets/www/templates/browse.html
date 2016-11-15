@@ -1,0 +1,9 @@
+<ion-view view-title="browse">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="browse in browse" href="#/app/browse/{{browse.id}}">
+        {{browse.title}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

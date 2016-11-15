@@ -1,0 +1,85 @@
+{
+    "marcadores": [
+      {
+	"id": 1, 
+        "lat": -41.135758, 
+        "lng": -71.311018,
+        "icon": "img/cerve.png",
+        "descrip": "Berlina Happy de 19 a 23 ",
+	"start": "19:00:00",
+	"end": "23:00:00"
+      },
+      {
+	"id":2, 
+        "lat": -41.135893,
+        "lng":   -71.310535, 
+	"icon": "img/cerve.png",
+        "descrip": "Manush Happy de 10 a 24",
+	"start": "10:00:00",
+	"end": "24:00:00"
+      },
+      {
+	"id":3, 
+        "lat": -41.135968,  
+        "lng": -71.309760 ,
+	"icon": "img/cerve.png",
+        "descrip": "Antares",
+	"start": "00:00:00",
+	"end": "24:00:00"
+      },
+      {
+	"id":4, 
+        "lat": -41.135365,  
+        "lng": -71.311802,
+	"icon": "img/cerve.png",
+        "descrip": "Wesley",
+	"start": "10:00:00",
+	"end": "24:00:00"
+      },
+	{
+	"id":5, 
+        "lat": -41.135158, 
+        "lng": -71.3110762,
+	"icon": "img/cerve.png",
+        "descrip": "Konna",
+	"start": "23:00:00",
+	"end": "24:00:00"
+      },
+	{
+	"id":6, 
+        "lat": -41.135158,  
+        "lng": -71.310529,
+	"icon": "img/Southbar.png",
+        "descrip": "South Bar",
+	"start": "10:00:00",
+	"end": "24:00:00"
+      },
+	{
+	"id":7, 
+        "lat": -41.135137,  
+        "lng": -71.310926,
+	"icon": "img/cerve.png",
+        "descrip": "Dublin",
+	"start": "10:00:00",
+	"end": "24:00:00"
+      },
+	{
+	"id":8, 
+        "lat": -41.135413, 
+        "lng": -71.310938 ,
+	"icon": "img/cerve.png",
+        "descrip": "Santino",
+	"start": "10:00:00",
+	"end": "24:00:00"
+      },
+	{
+	"id":9, 
+        "lat": -41.135213,  
+        "lng": -71.310560,
+	"icon": "../",
+        "descrip": "Vikingos",
+	"start": "10:00:00",
+	"end": "24:00:00"
+      }
+]
+}

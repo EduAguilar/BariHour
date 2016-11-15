@@ -1,0 +1,93 @@
+/* Empty. Add your own CSS if you like */
+.scroll {
+  height: 100%;
+}
+
+html { height: 100% }
+body { height: 100%; margin: 0px; padding: 0px }
+/*Contiene las proporciones donde se visualizara el mapa*/
+#map { width: 100%; height: 96% }
+/*contiene la altura donde sin que el menu tape las imagenes*/
+#content{height: 94%}
+
+#menu img{
+  width:100%;
+  height:100%;
+  display: block;
+}
+
+#icono{position: absolute; top: 0px;left: 5px}
+
+
+#especial {
+  font-style: bold;
+  font-size: 150%;
+  font-family: "Times New Roman", Times, red serifs;
+  width: auto;
+  height: auto;
+  -webkit-animation: mymove1 7s infinite; /* Chrome, Safari, Opera */
+  animation: mymove1 7s infinite;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove1 {
+    50% {text-shadow: 10px 20px 30px blue;}
+}
+/* Standard syntax */
+@keyframes mymove1 {
+    50% {text-shadow: 10px 20px 30px blue;}
+}
+
+
+#title_Name{
+    text-align: center;
+    font-style: bold;
+    font-family: "Times New Roman", Times, red serifs;
+}
+
+
+#mainMenu{
+  /*position: absolute;
+  display: block;
+  width:100%;
+  -webkit-animation: mymove 20s ; /* Chrome, Safari, Opera */
+  /*animation: mymove 20s ;*/
+}
+
+
+#start{
+  position: absolute;
+  width:100%;
+  height:100%;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    50% {opacity: 0;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    50% {opacity: 0;}
+}
+
+
+.home {
+    background: url(../img/start.gif);
+    background-repeat: no-repeat;
+    background-size: 100% 110%;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    z-index: 0;
+    position: absolute;
+}
+
+.go_button {
+    transition: .5s ease;
+    top: 70%;
+    position:relative;
+    text-align: center;
+}
+
+
+
