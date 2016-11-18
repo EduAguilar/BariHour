@@ -1,0 +1,44 @@
+<ion-nav-view>
+  <!-- Barra Principal - Titulo app -->
+  <ion-nav-bar class="bar-ligth">
+    
+    <ion-nav-buttons>
+      <div id="icono">
+        <img src="img/favicon.ico">
+      </div>
+    </ion-nav-buttons>
+
+    <ion-nav-title >  
+      <h1 id="especial" class="title">BariHour</h1>  
+    </ion-nav-title>
+    
+    <ion-nav-buttons side="secondary">
+      <button class="button button-clear button-stable  ion-log-out" ng-click="doLogout()"> log out</button>
+    </ion-nav-buttons> 
+
+  </ion-nav-bar>
+  <!--*******************************-->
+
+  <!--Tab inferior -->
+  <div class="tabs-ligth tabs-icon-top">
+    <div class="tabs">
+      <a class="tab-item" href="#/app/menu">
+        <i class="icon ion-home " ></i>
+        <b>Main Menu</b>
+      </a>
+      <a class="tab-item" href="#/app/listaBar">
+        <i class="icon ion-wineglass " ng-click="tipo(2)"></i>
+        <b>Bares</b>
+      </a>
+      <a class="tab-item " href="#/app/listaCerve">
+        <i class="icon ion-beer " ng-click="tipo(1)"></i>
+        <b>Cervecerias</b>
+      </a>
+      <a class="tab-item" href="#/app/listaPubs">
+        <i class="icon ion-social-freebsd-devil" ng-click="tipo(1)"></i>
+        <b>Pubs</b>
+      </a>    
+    </div>
+  </div>
+  <!--*******************************-->
+</ion-nav-view>

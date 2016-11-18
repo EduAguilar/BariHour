@@ -3,7 +3,7 @@
 	<ion-content >
 		<ion-list>
 			<ion-item class="item item-avatar" ng-repeat="x in data.marcadores" ng-if="x.tipo==2" href="#/app/detalles" ng-click="detalle({{x.id}})">
-				<img src="{{x.image}}">
+				<img ng-src="{{x.image}}">
 				<!--<h1>{{x.id}}</h1>-->
 				<h2><b>{{x.name}}</b></h2>
 				

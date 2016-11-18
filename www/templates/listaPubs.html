@@ -1,16 +1,14 @@
-
 <ion-view id="content">
 	<ion-content >
 		<ion-list>
-			<ion-item class="item item-avatar" ng-repeat="x in data.marcadores" ng-if="x.tipo==1" href="#/app/detalles" ng-click="detalle({{x.id}})">
+			<ion-item class="item item-avatar" ng-repeat="x in data.marcadores" ng-if="x.tipo==3" href="#/app/detalles" ng-click="detalle({{x.id}})">
 				<img ng-src="{{x.image}}">
 				<!--<h1>{{x.id}}</h1>-->
 				<h2 ><b>{{x.name}}</b></h2>
 				
 				<p>{{x.horario}}</p>
-				<p>Happy hour de {{x.start|date:'HH'}} a {{x.end|date:'HH'}}</p> 
+				
 			</ion-item>
 		</ion-list>
 	</ion-content>
 </ion-view>
-

@@ -5,20 +5,24 @@
 
 html { height: 100% }
 body { height: 100%; margin: 0px; padding: 0px }
-/*Contiene las proporciones donde se visualizara el mapa*/
+
+/*Contiene las proporciones donde se visualizará el mapa*/
 #map { width: 100%; height: 96% }
-/*contiene la altura donde sin que el menu tape las imagenes*/
+
+/*contiene la altura para que las barras de menu y tabs no tapen el contenido*/
 #content{height: 94%}
 
+/*Menu de Imágenes*/
 #menu img{
   width:100%;
   height:100%;
   display: block;
 }
 
+/*Marca la posición del Icono BariHour*/
 #icono{position: absolute; top: 0px;left: 5px}
 
-
+/*Barra Principal - Titulo app*/
 #especial {
   font-style: bold;
   font-size: 150%;
@@ -36,40 +40,16 @@ body { height: 100%; margin: 0px; padding: 0px }
 @keyframes mymove1 {
     50% {text-shadow: 10px 20px 30px blue;}
 }
+/******************************************/
 
-
+/*Estilo para algunos titulos*/
 #title_Name{
     text-align: center;
     font-style: bold;
     font-family: "Times New Roman", Times, red serifs;
 }
 
-
-#mainMenu{
-  /*position: absolute;
-  display: block;
-  width:100%;
-  -webkit-animation: mymove 20s ; /* Chrome, Safari, Opera */
-  /*animation: mymove 20s ;*/
-}
-
-
-#start{
-  position: absolute;
-  width:100%;
-  height:100%;
-}
-/* Chrome, Safari, Opera */
-@-webkit-keyframes mymove {
-    50% {opacity: 0;}
-}
-
-/* Standard syntax */
-@keyframes mymove {
-    50% {opacity: 0;}
-}
-
-
+/*Página de inicio*/
 .home {
     background: url(../img/start.gif);
     background-repeat: no-repeat;
@@ -88,6 +68,38 @@ body { height: 100%; margin: 0px; padding: 0px }
     position:relative;
     text-align: center;
 }
+/*****************/
 
+/*Para efecto de texto agrandandose*/
+#font-size{
+  font-size: 30px;
+  width: 400px;
+  height: 100px;
+  font-style: bold;
+  font-family: "Times New Roman", Times, red serifs;
+  -webkit-animation: mymove3 5s infinite; /* Chrome, Safari, Opera */
+  animation: mymove3 5s infinite;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove3 {
+    50% {font-size: 50px;}
+}
+/* Standard syntax */
+@keyframes mymove3 {
+    50% {font-size: 40px;}
+}
+/**************************/
 
-
+/*Info-Windows*/
+#name{
+  font-style: bold;
+  font-size: 150%;
+  font-family: "Times New Roman", Times, red serifs;
+  text-align: center;
+  }
+#contentInfo{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }

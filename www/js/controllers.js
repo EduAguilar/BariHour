@@ -2,8 +2,7 @@
 angular.module('starter.controllers', [])
 
 
-
-.controller('AppCtrl', function($scope,MyService,$http,$cordovaGeolocation) {
+.controller('MenuCtrl', function($scope,MyService,$http,$cordovaGeolocation) {
 
   $scope.myFunc = function(e) {
         MyService.setProperty(e);
@@ -24,6 +23,7 @@ angular.module('starter.controllers', [])
             })}
   })
   
+
 .controller('MapCtrl', function($scope,$cordovaGeolocation, $http, $filter, MyService) {
 
   $scope.centrado=(MyService.getUbicacion());
@@ -71,15 +71,18 @@ angular.module('starter.controllers', [])
     $scope.map.mapTypes.set('map_style', styledMap);
     $scope.map.setMapTypeId('map_style');
 
+
+
     //valor inicial para variable de infowindow
     var prev_infowindow =false; 
-
+    
     google.maps.event.addListenerOnce($scope.map, 'idle', function(){
       //Espera hasta que el mapa haya cargado
       var today = $filter('date')(new Date(),'HH:mm:ss');
     
       //Marcadores
       $scope.data=MyService.getArray();
+
 
       //Loop json
       angular.forEach($scope.data.marcadores, function(value, key){
@@ -93,24 +96,28 @@ angular.module('starter.controllers', [])
             map: $scope.map,
             animation: animation,
             title: value.name,
-            icon: {url:value.icon},
+            icon: {url:value.iconMarKer},
             position: {lat: value.lat,lng: value.lng}
           });
-
-          //Descripcion cada marcador   
+          
+         
+          //Descripcion cada marcador en su infoWindows
           var infoWindow = new google.maps.InfoWindow({
-            content: value.name           
+            content:  "<div id= \"contentInfo\"><div id=\"name\"> <b>"+value.name+"</b></div>"+ value.horario+"<br> "+value.telefono +"<br><div><a class=\"button button-clear button-dark\" href=\"#/app/detalles\" ng-click=\"detalle()\"><b>Ver Mas</b></a> </div></div>"
+          })
 
+          //Accion del click sobre cada marcador - Abrir/cerrar infoWindows
+          google.maps.event.addListener(marker, 'click', function(idmarker,key){
 
-          });
-
-          google.maps.event.addListener(marker, 'click', function(){
             if( prev_infowindow ) {
               prev_infowindow.close();
             }
+          
+            //Guarda el valor del marcador clickeado para luego pasar este valor a detalle()
+            MyService.setItem(value.id);
 
             prev_infowindow = infoWindow;
-            infoWindow.open($scope.map, this);
+            infoWindow.open($scope.map, this);       
           });
         }
       })
@@ -125,46 +132,9 @@ angular.module('starter.controllers', [])
     };
 })
 
+
 .controller('Detalles',function($scope, MyService) {
 $scope.data=MyService.getArray();
 $scope.id=MyService.getItem();
 $scope.item=$scope.data.marcadores[$scope.id];
-
 });
-
-
-/*directionsDisplay = new google.maps.DirectionsRenderer({
-=======
-
-
-
-});
-/*
-
-directionsDisplay = new google.maps.DirectionsRenderer({
->>>>>>> 0d4084245e29ca74499f5a469a91f78669b54722
-              });
-start  = new google.maps.LatLng(-41.135893,  -71.310535);
-  end = new google.maps.LatLng(-41.135893,  -71.310000);   
-var directionsService = new google.maps.DirectionsService();
-var request = {
-                  origin: start,
-                  destination: end,
-                  optimizeWaypoints: true,
-                  travelMode: google.maps.DirectionsTravelMode.WALKING
-              };
-directionsService.route(request, function(response, status) {
-                  if (status == google.maps.DirectionsStatus.OK) {
-                      directionsDisplay.setDirections(response);
-                      var route = response.routes[0];
-
-                  }
-              });
-*/
-
-
-
-
-
-
-
