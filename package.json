@@ -1,7 +1,7 @@
 {
   "name": "BariHour",
   "version": "1.1.1",
-  "description": "mapa-menues: An Ionic project",
+  "description": "BariHour: An Ionic project",
   "dependencies": {
     "gulp": "^3.5.6",
     "gulp-sass": "^2.0.4",
