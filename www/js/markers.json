@@ -6,7 +6,7 @@
 			"tipo":1,
 			"name": "Berlina",
 			"horario":"Abierto de 12:00 a 00:00",
-	        "direccion": "Av. Exequiel Bustillo km 11,750, San Carlos de Bariloche, Río Negro",
+	        "direccion": "Av. Exequiel Bustillo km 11,750, Bariloche",
 	        "telefono": "0294 452-3336",
 	        "descrip":"",
 	        "web":"cervezaberlina.com",
@@ -17,17 +17,20 @@
     	    "lat": -41.1082478, 
         	"lng": -71.4347567,
         	"iconMarKer": "img/cerve.png",
-        	"logo":"",
-			"image": "img/Imagenes/Berlina.jpg",
-			"image2":"",
-			"image3":""
+        	"logo":"img/Imagenes/berlinalogo.png",
+			"image": [
+			{"imagen":"img/Imagenes/berlinalogo.png"},
+			{"imagen":"img/Imagenes/berlina1.png"},
+			{"imagen":"img/Imagenes/berlina2.png"},
+			{"imagen":"img/Imagenes/berlina3.png"}
+		]
       	},
       	{
 			"id": 1,
 			"tipo":1,
 			"name": "Manush",
 			"horario":"Abierto de 17:30 a 03:00",
-	        "direccion": "Elflein 10, San Carlos de Bariloche, San Carlos de Bariloche, Río Negro",
+	        "direccion": "Elflein 10, Bariloche",
 	        "telefono": "0294 442-8905",
 	        "descrip":"17 variedades de cervezas Ales, Lagers y Belgians",
 	        "web":"www.cervezamanush.com.ar",
@@ -38,17 +41,20 @@
     	    "lat": -41.1357997, 
         	"lng": -71.3104387,
         	"iconMarKer": "img/cerve.png",
-        	"logo":"",
-			"image": "img/Imagenes/Manush.jpg",
-			"image2":"",
-			"image3":""
+        	"logo":"img/Imagenes/manushlogo.png",
+			"image": [
+				{"imagen":"img/Imagenes/manushlogo.png"},
+				{"imagen":"img/Imagenes/manush1.png"},
+				{"imagen":"img/Imagenes/manush2.png"},
+				{"imagen":"img/Imagenes/manush3.png"}
+			]
       	},
       	{
       		"id": 2,
 			"tipo":1,
 			"name": "Antares",
 			"horario":"Abierto de 18:30 a 03",
-	        "direccion": "Elflein 47, San Carlos de Bariloche,Rio Negro",
+	        "direccion": "Elflein 47, Bariloche",
 	        "telefono": "0294 443-1454",
 	        "descrip":"En Antares respirás cultura y tradición cervecera. Servimos nuestras 9 variedades de cerveza artesanal, acompañadas por tapas, picadas, cocina centroeuropea y platos con cerveza.",
 	        "web":"http://www.cervezaantares.com.ar",
@@ -59,17 +65,20 @@
     	    "lat": -41.1358012, 
         	"lng": -71.3097665,
         	"iconMarKer": "img/cerve.png",
-        	"logo":"",
-			"image": "img/Imagenes/Antares.png",
-			"image2":"",
-			"image3":""
+        	"logo":"img/Imagenes/antareslogo.png",
+			"image": [
+				{"imagen":"img/Imagenes/antareslogo.png"},
+				{"imagen":"img/Imagenes/antares1.png"},
+				{"imagen":"img/Imagenes/antares2.png"},
+				{"imagen":"img/Imagenes/antares3.png"}
+			]
       	},
       	{
       		"id": 3,
 			"tipo":1,
 			"name": "Wesley",
 			"horario":"Abierto de 18 a 08",
-	        "direccion": "20 de Febrero 451, San Carlos de Bariloche, Río Negro",
+	        "direccion": "20 de Febrero 451, Bariloche",
 	        "telefono": "0294 4657502",
 	        "descrip":"",
 	        "web":"www.cervezawesley.com",
@@ -80,17 +89,20 @@
     	    "lat": -41.136010, 
         	"lng": -71.3117556,
         	"iconMarKer": "img/cerve.png",
-        	"logo":"",
-			"image": "img/Imagenes/Wesley.jpg",
-			"image2":"",
-			"image3":""
+        	"logo":"img/Imagenes/wesleylogo.png",
+			"image": [
+				{"imagen":"img/Imagenes/wesleylogo.png"},
+				{"imagen":"img/Imagenes/wesley1.png"},
+				{"imagen":"img/Imagenes/wesley2.png"},
+				{"imagen":"img/Imagenes/wesley3.png"}
+			]
       	},
 		{
 			"id":4, 
 			"tipo":2,
 			"name": "Konna",
 	        "horario":"Abierto de -sin informacion-",
-	        "direccion": "Juramento 73, San Carlos de Bariloche, Río Negro",
+	        "direccion": "Juramento 73, Bariloche",
 	        "telefono": "0294 443-7883",
 	        "descrip":"",
 	        "web":"http://www.cervezakonna.com",
@@ -100,38 +112,44 @@
 			"end": "24:00",			
         	"lat": -41.1350189, 
 	        "lng": -71.3110889,
-			"iconMarKer": "img/cerve.png",
-			"logo":"",
-			"image": "img/Imagenes/Konna.jpg",
-			"image2":"",
-			"image3":""
+			"iconMarKer": "img/glass.png",
+			"logo":"img/Imagenes/konnalogo.png",
+			"image": [
+				{"imagen":"img/Imagenes/konnalogo.png"},
+				{"imagen":"img/Imagenes/konna1.png"},
+				{"imagen":"img/Imagenes/konna2.png"},
+				{"imagen":"img/Imagenes/konna3.png"}
+			]
       	},
 		{
 			"id":5, 
 			"tipo":2,
         	"name": "South Bar",
-	        "horario":"Abierto de 18 a 03",
-	        "direccion": "Juramento, San Carlos de Bariloche, Río Negro",
+	        "horario":"Abierto de 20 a 03",
+	        "direccion": "Juramento, Bariloche",
 	        "telefono": "0294 452-2001",
 	        "descrip":"",
 	        "web":"",
 	        "facebook":"",
 	        "twiter":"",
-			"start": "10:00",
+			"start": "20:00",
 			"end": "24:00",
         	"lat": -41.135219,  
         	"lng": -71.3108608,
-			"iconMarKer": "img/cerve.png",
-			"image": "img/Imagenes/southbar.png",
-			"image2":"",
-			"image3":""
+			"iconMarKer": "img/glass.png",
+			"logo":"img/Imagenes/southbarlogo.png",
+			"image": [
+				{"imagen":"img/Imagenes/southbarlogo.png"},
+				{"imagen":"img/Imagenes/southbar2.png"},
+				{"imagen":"img/Imagenes/southbar1.png"}
+			]
       	},
 		{
 			"id":6, 
 			"tipo":2,
         	"name": "Dublin",
 	        "horario":"Abierto de 19 a 03:30",
-	        "direccion": "Juramento 66, San Carlos de Bariloche, Río Negro",
+	        "direccion": "Juramento 66, Bariloche",
 	        "telefono": "0294 456-2867",
 	        "descrip":"Dublin Bariloche, es un bar que ofrece varidedades de tragos y cerveza artesanal, tambien tiene un menu de comida al paso, musica variada, con patio",
 	        "web":"",
@@ -141,17 +159,20 @@
 			"end": "03:30",
         	"lat": -41.135279,  
         	"lng": -71.3110629,
-			"iconMarKer": "img/cerve.png",
-			"image": "img/Imagenes/Dublin.jpg",
-			"image2":"",
-			"image3":""
+			"iconMarKer": "img/glass.png",
+			"logo":"img/Imagenes/dublinlogo.png",
+			"image": [
+				{"imagen":"img/Imagenes/dublinlogo.png"},
+				{"imagen":"img/Imagenes/dublin2.png"},
+				{"imagen":"img/Imagenes/dublin1.png"}
+			]
       	},
 		{
 			"id":7, 
 			"tipo":2,
         	"name": "Santino",
 	        "horario":"Abierto de 20 a 03:00",
-	        "direccion": "20 de Febrero 37, San Carlos de Bariloche, Río Negro",
+	        "direccion": "20 de Febrero 37, Bariloche",
 	        "telefono": "0294 489-0411",
 	        "descrip":"Un clásico de Bariloche, cerveza artesanal Manush, comidas, tragos, buena música, noches de karaoke y shows acústicos y toda la onda!! Te esperamos!!",
 	        "web":"",
@@ -161,17 +182,21 @@
 			"end": "03:00",
         	"lat": -41.135325,  
         	"lng": -71.3109376,
-			"iconMarKer": "img/cerve.png",
-			"image": "img/Imagenes/Santino.jpg",
-			"image2":"",
-			"image3":""
+			"iconMarKer": "img/glass.png",
+			"logo":"img/Imagenes/santinologo.png",
+			"image": [
+				{"imagen":"img/Imagenes/santinologo.png"},
+				{"imagen":"img/Imagenes/santino1.png"},
+				{"imagen":"img/Imagenes/santino2.png"},
+				{"imagen":"img/Imagenes/santino3.png"}
+			]
       	},
 		{
 			"id":8, 
 			"tipo":2,
         	"name": "Vikingos",
 	        "horario":"Abierto de 19:00 a 03:00",
-	        "direccion": "20 de febrero y Juramento, San Carlos de Bariloche, Río Negro",
+	        "direccion": "20 de febrero y Juramento, Bariloche",
 	        "telefono": "sin información",
 	        "descrip":"Cervecería y restobar.",
 	        "web":"",
@@ -181,17 +206,21 @@
 			"end": "03:00",
         	"lat": -41.135277,  
         	"lng": -71.310503,
-			"iconMarKer": "img/cerve.png",
-			"image": "img/Imagenes/Vikingos.jpg",
-			"image2":"",
-			"image3":""
+			"iconMarKer": "img/glass.png",
+			"logo":"img/Imagenes/vikingoslogo.png",
+			"image": [
+				{"imagen":"img/Imagenes/vikingos1.png"},
+				{"imagen":"img/Imagenes/vikingos1.png"},
+				{"imagen":"img/Imagenes/vikingos2.png"},
+				{"imagen":"img/Imagenes/vikingos3.png"}
+			]
       	},
       	{
 			"id":9, 
 			"tipo":1,
         	"name": "Bachmann -Centro",
 	        "horario":"Abierto de 17:00 a 03:00",
-	        "direccion": "Elflein 90, San Carlos de Bariloche, Río Negro",
+	        "direccion": "Elflein 90, Bariloche",
 	        "telefono": "0294 442-2249",
 	        "descrip":"Bachmann Cerveceria-Restaurant Cerveza artesanal Barilochense",
 	        "web":"www.cerveceriabachmann.com.ar",
@@ -202,16 +231,20 @@
         	"lat": -41.1357444,  
         	"lng": -71.308767,
 			"iconMarKer": "img/cerve.png",
-			"image": "img/Imagenes/Bachmann.jpg",
-			"image2":"",
-			"image3":""      		
+			"logo":"img/Imagenes/bachmannlogo.png",
+			"image": [
+				{"imagen":"img/Imagenes/bachmannlogo.png"},
+				{"imagen":"img/Imagenes/bachmann1.png"},
+				{"imagen":"img/Imagenes/bachmann2.png"},
+				{"imagen":"img/Imagenes/bachmann3.png"}
+			]
       	},
     	{
 			"id":10, 
 			"tipo":2,
         	"name": "Stradibar",
 	        "horario":"Abierto de sin información",
-	        "direccion": "Juramento 158, San Carlos de Bariloche, Río Negro",
+	        "direccion": "Juramento 158, Bariloche",
 	        "telefono": "0294 425-8845",
 	        "descrip":"Cervecería y restobar",
 	        "web":"",
@@ -221,17 +254,19 @@
 			"end": "20:00",
         	"lat": -41.1350094,  
         	"lng": -71.3121491,
-			"iconMarKer": "img/cerve.png",
-			"image": "img/Imagenes/Stradibar.png",
-			"image2":"",
-			"image3":""    
+			"iconMarKer": "img/glass.png",
+			"logo":"img/Imagenes/stradibarlogo.png",
+			"image": [
+				{"imagen":"img/Imagenes/stradibarlogo.png"},
+				{"imagen":"img/Imagenes/stradibar1.png"}
+			]
       	},
     	{
 			"id":11, 
 			"tipo":2,
         	"name": "Kutral",
 	        "horario":"Abierto de 19:00 a 03:00",
-	        "direccion": "Juramento 141, San Carlos de Bariloche, Río Negro",
+	        "direccion": "Juramento 141, Bariloche",
 	        "telefono": "0294 443-2145",
 	        "descrip":"Cervecería y restobar",
 	        "web":"",
@@ -241,17 +276,21 @@
 			"end": "20:00",
         	"lat": -41.1348876,  
         	"lng": -71.3120071,
-			"iconMarKer": "img/cerve.png",
-			"image": "img/Imagenes/Kutral.jpg",
-			"image2":"",
-			"image3":"" 
+			"iconMarKer": "img/glass.png",
+			"logo":"img/Imagenes/kutrallogo.png",
+			"image": [
+				{"imagen":"img/Imagenes/kutrallogo.png"},
+				{"imagen":"img/Imagenes/kutral1.png"},
+				{"imagen":"img/Imagenes/kutral2.png"},
+				{"imagen":"img/Imagenes/kutral3.png"}
+			]
       	},
     	{
 			"id":12, 
 			"tipo":3,
         	"name": "After 7",
 	        "horario":"Abierto de 23:00 a 07:00",
-	        "direccion": "España 268, San Carlos de Bariloche, Río Negro",
+	        "direccion": "España 268, Bariloche",
 	        "telefono": "0294 443-2528",
 	        "descrip":"After Office - Rest Bar - Vip Lounge Deck - Patio fumadores",
 	        "web":"www.after7.com.ar/",
@@ -262,16 +301,20 @@
         	"lat": -41.1334991,  
         	"lng": -71.3142718,
 			"iconMarKer": "img/cerve.png",
-			"image": "img/Imagenes/After7.jpg",
-			"image2":"",
-			"image3":"" 
+			"logo":"img/Imagenes/after7logo.png",
+			"image": [
+				{"imagen":"img/Imagenes/afterlogo.png"},
+				{"imagen":"img/Imagenes/after71.png"},
+				{"imagen":"img/Imagenes/after72.png"},
+				{"imagen":"img/Imagenes/after73.png"}
+			]
       	},
     	{
 			"id":13, 
 			"tipo":3,
         	"name": "Wilkenny",
 	        "horario":"Abierto de 20:00 a 07:00",
-	        "direccion": "San Martín 435, San Carlos de Bariloche, Río Negro",
+	        "direccion": "San Martín 435, Bariloche",
 	        "telefono": "0294 442-4444",
 	        "descrip":"",
 	        "web":"",
@@ -282,16 +325,20 @@
         	"lat": -41.1337708,  
         	"lng": -71.3149442,
 			"iconMarKer": "img/cerve.png",
-			"image": "img/Imagenes/Wilkenny.jpg",
-			"image2":"",
-			"image3":"" 
+			"logo":"img/Imagenes/wilkennylogo.png",
+			"image": [
+				{"imagen":"img/Imagenes/wilkennylogo.png"},
+				{"imagen":"img/Imagenes/wilkenny1.png"},
+				{"imagen":"img/Imagenes/wilkenny2.png"},
+				{"imagen":"img/Imagenes/wilkenny3.png"}
+			]
       	},
     	{
 			"id":14, 
 			"tipo":3,
         	"name": "Interview",
 	        "horario":"Abierto de 01:00 a 07:00",
-	        "direccion": "Rolando 201, San Carlos de Bariloche, Río Negro",
+	        "direccion": "Rolando 201, Bariloche",
 	        "telefono": "sin información",
 	        "descrip":"",
 	        "web":"",
@@ -302,16 +349,20 @@
         	"lat": -41.1344459,  
         	"lng": -71.3057231,
 			"iconMarKer": "img/cerve.png",
-			"image": "img/Imagenes/Interview.jpg",
-			"image2":"",
-			"image3":"" 
+			"logo":"img/Imagenes/interviewlogo.png",
+			"image": [
+				{"imagen":"img/Imagenes/interviewlogo.png"},
+				{"imagen":"img/Imagenes/interview1.png"},
+				{"imagen":"img/Imagenes/interview2.png"},
+				{"imagen":"img/Imagenes/interview3.png"}
+			]
       	},	
     	{
 			"id":15, 
 			"tipo":3,
         	"name": "Diversión",
 	        "horario":"Abierto de 01:00 a 07:00",
-	        "direccion": "Av San Martin 580, San Carlos de Bariloche, Río Negro",
+	        "direccion": "Av San Martin 580, Bariloche",
 	        "telefono": "sin información",
 	        "descrip":"",
 	        "web":"",
@@ -322,16 +373,20 @@
         	"lat": -41.1328356,  
         	"lng": -71.3190773,
 			"iconMarKer": "img/cerve.png",
-			"image": "img/Imagenes/Diversión.jpg",
-			"image2":"",
-			"image3":"" 
+			"logo":"img/Imagenes/diversionlogo.png",
+			"image": [
+				{"imagen":"img/Imagenes/diversionlogo.png"},
+				{"imagen":"img/Imagenes/diversion1.png"},
+				{"imagen":"img/Imagenes/diversion2.png"},
+				{"imagen":"img/Imagenes/diversion3.png"}
+			]
       	},
       	{
 			"id":16, 
 			"tipo":3,
         	"name": "Eclipse",
 	        "horario":"Abierto de 00:30 a 06:30",
-	        "direccion": "Av San Martin 127, esq. Pagano, San Carlos de Bariloche, Río Negro",
+	        "direccion": "Av San Martin 127, esq. Pagano, Bariloche",
 	        "telefono": "sin información",
 	        "descrip":"",
 	        "web":"",
@@ -342,16 +397,20 @@
         	"lat": -41.1344351,  
         	"lng": -71.3118764,
 			"iconMarKer": "img/cerve.png",
-			"image": "img/Imagenes/Eclipse.jpg",
-			"image2":"",
-			"image3":"" 
+			"logo":"img/Imagenes/eclipselogo.png",
+			"image": [
+				{"imagen":"img/Imagenes/eclipselogo.png"},
+				{"imagen":"img/Imagenes/eclipse1.png"},
+				{"imagen":"img/Imagenes/eclipse2.png"},
+				{"imagen":"img/Imagenes/eclipse3.png"}
+			]
       	},
       	{
 			"id":17, 
 			"tipo":3,
         	"name": "Lelac",
 	        "horario":"Abierto de 00:30 a 06:30",
-	        "direccion": "Pagano 227, San Carlos de Bariloche, Río Negro",
+	        "direccion": "Pagano 227, Bariloche",
 	        "telefono": "0294 440-0140",
 	        "descrip":"",
 	        "web":"",
@@ -362,16 +421,20 @@
         	"lat": -41.1338032,  
         	"lng": -71.3113705,
 			"iconMarKer": "img/cerve.png",
-			"image": "img/Imagenes/Lelac.jpg",
-			"image2":"",
-			"image3":"" 
+			"logo":"img/Imagenes/lelaclogo.png",
+			"image": [
+				{"imagen":"img/Imagenes/lelaclogo.png"},
+				{"imagen":"img/Imagenes/lelac1.png"},
+				{"imagen":"img/Imagenes/lelac2.png"},
+				{"imagen":"img/Imagenes/lelac3.png"}
+			]
       	},
       	{
 			"id":18, 
 			"tipo":3,
         	"name": "LaCantina RockReggae",
 	        "horario":"Abierto de 01:00 a 07:00",
-	        "direccion": "Juan Manuel de Rosas 523 (Av. Costanera), San Carlos de Bariloche, Río Negro",
+	        "direccion": "Juan Manuel de Rosas 523 (Av. Costanera), Bariloche",
 	        "telefono": " sin información",
 	        "descrip":"La Cantina es un tradicional y reconocido pub de la ciudad de Bariloche, donde el Rock y el Reggae se fusionan sin perder autenticidad.",
 	        "web":"www.lacantinabariloche.com.ar/",
@@ -382,16 +445,20 @@
         	"lat": -41.1325169,  
         	"lng": -71.3170585,
 			"iconMarKer": "img/cerve.png",
-			"image": "img/Imagenes/LaCantina.png",
-			"image2":"",
-			"image3":"" 
+			"logo":"img/Imagenes/lacantinañogo.png",
+			"image": [
+				{"imagen":"img/Imagenes/lacantinalogo.png"},
+				{"imagen":"img/Imagenes/lacantina1.png"},
+				{"imagen":"img/Imagenes/lacantina2.png"},
+				{"imagen":"img/Imagenes/lacantina3.png"}
+			]
       	},
       	{
 			"id":19, 
 			"tipo":2,
         	"name": "Ruta 40",
 	        "horario":"Abierto de 01:00 a 07:00",
-	        "direccion": "Juan Manuel de Rosas 523 (Av. Costanera), San Carlos de Bariloche, Río Negro",
+	        "direccion": "Juan Manuel de Rosas 523 (Av. Costanera), Bariloche",
 	        "telefono": " sin información",
 	        "descrip":"La Cantina es un tradicional y reconocido pub de la ciudad de Bariloche, donde el Rock y el Reggae se fusionan sin perder autenticidad.",
 	        "web":"www.lacantinabariloche.com.ar/",
@@ -401,17 +468,19 @@
 			"end": "02:00",
         	"lat": -41.1325169,  
         	"lng": -71.3170585,
-			"iconMarKer": "img/cerve.png",
-			"image": "img/Imagenes/logo512x512.png",
-			"image2":"",
-			"image3":"" 
+			"iconMarKer": "img/glass.png",
+			"logo":"img/Imagenes/ruta40logo.png",
+			"image": [
+				{"imagen":"img/Imagenes/ruta40logo.png"},
+				{"imagen":"img/Imagenes/ruta402.png"}
+			]
       	},
       	{
 			"id":20, 
 			"tipo":2,
         	"name": "1920",
 	        "horario":"Abierto de 01:00 a 07:00",
-	        "direccion": "Juan Manuel de Rosas 523 (Av. Costanera), San Carlos de Bariloche, Río Negro",
+	        "direccion": "Juan Manuel de Rosas 523 (Av. Costanera), Bariloche",
 	        "telefono": " sin información",
 	        "descrip":"La Cantina es un tradicional y reconocido pub de la ciudad de Bariloche, donde el Rock y el Reggae se fusionan sin perder autenticidad.",
 	        "web":"www.lacantinabariloche.com.ar/",
@@ -421,17 +490,21 @@
 			"end": "02:00",
         	"lat": -41.1325169,  
         	"lng": -71.3170585,
-			"iconMarKer": "img/cerve.png",
-			"image": "img/Imagenes/logo512x512.png",
-			"image2":"",
-			"image3":"" 
+			"iconMarKer": "img/glass.png",
+			"logo":"img/Imagenes/1920logo.png",
+			"image": [
+				{"imagen":"img/Imagenes/1920logo.png"},
+				{"imagen":"img/Imagenes/19201.png"},
+				{"imagen":"img/Imagenes/19202.png"},
+				{"imagen":"img/Imagenes/19203.png"}
+			]
       	},
       	{
 			"id":21, 
 			"tipo":2,
         	"name": "Maraja",
 	        "horario":"Abierto de 01:00 a 07:00",
-	        "direccion": "Juan Manuel de Rosas 523 (Av. Costanera), San Carlos de Bariloche, Río Negro",
+	        "direccion": "Juan Manuel de Rosas 523 (Av. Costanera), Bariloche",
 	        "telefono": " sin información",
 	        "descrip":"La Cantina es un tradicional y reconocido pub de la ciudad de Bariloche, donde el Rock y el Reggae se fusionan sin perder autenticidad.",
 	        "web":"www.lacantinabariloche.com.ar/",
@@ -441,17 +514,19 @@
 			"end": "02:00",
         	"lat": -41.1325169,  
         	"lng": -71.3170585,
-			"iconMarKer": "img/cerve.png",
-			"image": "img/Imagenes/logo512x512.png",
-			"image2":"",
-			"image3":"" 
+			"iconMarKer": "img/glass.png",
+			"logo":"img/Imagenes/marajalogo.png",
+			"image": [
+				{"imagen":"img/Imagenes/maraja1.png"},
+				{"imagen":"img/Imagenes/maraja2.png"}
+			]
       	},
       	{
 			"id":22, 
 			"tipo":2,
         	"name": "Sowa",
 	        "horario":"Abierto de 01:00 a 07:00",
-	        "direccion": "Juan Manuel de Rosas 523 (Av. Costanera), San Carlos de Bariloche, Río Negro",
+	        "direccion": "Juan Manuel de Rosas 523 (Av. Costanera), Bariloche",
 	        "telefono": " sin información",
 	        "descrip":"La Cantina es un tradicional y reconocido pub de la ciudad de Bariloche, donde el Rock y el Reggae se fusionan sin perder autenticidad.",
 	        "web":"www.lacantinabariloche.com.ar/",
@@ -461,17 +536,20 @@
 			"end": "02:00",
         	"lat": -41.1325169,  
         	"lng": -71.3170585,
-			"iconMarKer": "img/cerve.png",
-			"image": "img/Imagenes/logo512x512.png",
-			"image2":"",
-			"image3":"" 
+			"iconMarKer": "img/glass.png",
+			"logo":"img/Imagenes/sowalogo.png",
+			"image": [
+				{"imagen":"img/Imagenes/sowa1.png"},
+				{"imagen":"img/Imagenes/sowa2.png"},
+				{"imagen":"img/Imagenes/sowa3.png"}
+			]
       	},
       	{
 			"id":23, 
 			"tipo":2,
         	"name": "Jamaica bajo cero",
 	        "horario":"Abierto de 01:00 a 07:00",
-	        "direccion": "Juan Manuel de Rosas 523 (Av. Costanera), San Carlos de Bariloche, Río Negro",
+	        "direccion": "Juan Manuel de Rosas 523 (Av. Costanera), Bariloche",
 	        "telefono": " sin información",
 	        "descrip":"La Cantina es un tradicional y reconocido pub de la ciudad de Bariloche, donde el Rock y el Reggae se fusionan sin perder autenticidad.",
 	        "web":"www.lacantinabariloche.com.ar/",
@@ -481,17 +559,20 @@
 			"end": "02:00",
         	"lat": -41.1325169,  
         	"lng": -71.3170585,
-			"iconMarKer": "img/cerve.png",
-			"image": "img/Imagenes/logo512x512.png",
-			"image2":"",
-			"image3":"" 
+			"iconMarKer": "img/glass.png",
+			"logo":"img/Imagenes/jamaicalogo.png",
+			"image": [
+				{"imagen":"img/Imagenes/jamaica3.png"},
+				{"imagen":"img/Imagenes/jamaica1.png"},
+				{"imagen":"img/Imagenes/jamaica2.png"}
+			]
       	},
       	{
 			"id":24, 
 			"tipo":1,
-        	"name": "Bachman - Ñireco",
+        	"name": "Bachmann - Ñireco",
 	        "horario":"Abierto de 01:00 a 07:00",
-	        "direccion": "Juan Manuel de Rosas 523 (Av. Costanera), San Carlos de Bariloche, Río Negro",
+	        "direccion": "Juan Manuel de Rosas 523 (Av. Costanera), Bariloche",
 	        "telefono": " sin información",
 	        "descrip":"La Cantina es un tradicional y reconocido pub de la ciudad de Bariloche, donde el Rock y el Reggae se fusionan sin perder autenticidad.",
 	        "web":"www.lacantinabariloche.com.ar/",
@@ -502,16 +583,20 @@
         	"lat": -41.1325169,  
         	"lng": -71.3170585,
 			"iconMarKer": "img/cerve.png",
-			"image": "img/Imagenes/logo512x512.png",
-			"image2":"",
-			"image3":"" 
+			"logo":"img/Imagenes/bachmannlogo.png",
+			"image": [
+				{"imagen":"img/Imagenes/bachmannlogo.png"},
+				{"imagen":"img/Imagenes/bachmann1.png"},
+				{"imagen":"img/Imagenes/bachmann2.png"},
+				{"imagen":"img/Imagenes/bachmann3.png"}
+			]
       	},
       	{
 			"id":25, 
 			"tipo":1,
-        	"name": "Blest km 12",
+        	"name": "Blest Km 12",
 	        "horario":"Abierto de 01:00 a 07:00",
-	        "direccion": "Juan Manuel de Rosas 523 (Av. Costanera), San Carlos de Bariloche, Río Negro",
+	        "direccion": "Juan Manuel de Rosas 523 (Av. Costanera), Bariloche",
 	        "telefono": " sin información",
 	        "descrip":"La Cantina es un tradicional y reconocido pub de la ciudad de Bariloche, donde el Rock y el Reggae se fusionan sin perder autenticidad.",
 	        "web":"www.lacantinabariloche.com.ar/",
@@ -522,16 +607,19 @@
         	"lat": -41.1325169,  
         	"lng": -71.3170585,
 			"iconMarKer": "img/cerve.png",
-			"image": "img/Imagenes/logo512x512.png",
-			"image2":"",
-			"image3":"" 
+			"logo":"img/Imagenes/blest1.png",
+			"image": [
+				{"imagen":"img/Imagenes/blest1.png"},
+				{"imagen":"img/Imagenes/blest2.png"},
+				{"imagen":"img/Imagenes/blest3.png"}
+			]
       	},      	
       	{
 			"id":26, 
 			"tipo":1,
-        	"name": "Blest km 4",
+        	"name": "Blest Km 4",
 	        "horario":"Abierto de 01:00 a 07:00",
-	        "direccion": "Juan Manuel de Rosas 523 (Av. Costanera), San Carlos de Bariloche, Río Negro",
+	        "direccion": "Juan Manuel de Rosas 523 (Av. Costanera), Bariloche",
 	        "telefono": " sin información",
 	        "descrip":"La Cantina es un tradicional y reconocido pub de la ciudad de Bariloche, donde el Rock y el Reggae se fusionan sin perder autenticidad.",
 	        "web":"www.lacantinabariloche.com.ar/",
@@ -542,16 +630,19 @@
         	"lat": -41.1325169,  
         	"lng": -71.3170585,
 			"iconMarKer": "img/cerve.png",
-			"image": "img/Imagenes/logo512x512.png",
-			"image2":"",
-			"image3":"" 
+			"logo":"img/Imagenes/blest2.png",
+			"image": [
+				{"imagen":"img/Imagenes/blest1.png"},
+				{"imagen":"img/Imagenes/blest2.png"},
+				{"imagen":"img/Imagenes/blest3.png"}
+			]
       	},
       	{
 			"id":27, 
 			"tipo":1,
         	"name": "Patagonia",
 	        "horario":"Abierto de 01:00 a 07:00",
-	        "direccion": "Juan Manuel de Rosas 523 (Av. Costanera), San Carlos de Bariloche, Río Negro",
+	        "direccion": "Juan Manuel de Rosas 523 (Av. Costanera), Bariloche",
 	        "telefono": " sin información",
 	        "descrip":"La Cantina es un tradicional y reconocido pub de la ciudad de Bariloche, donde el Rock y el Reggae se fusionan sin perder autenticidad.",
 	        "web":"www.lacantinabariloche.com.ar/",
@@ -562,16 +653,21 @@
         	"lat": -41.1325169,  
         	"lng": -71.3170585,
 			"iconMarKer": "img/cerve.png",
-			"image": "img/Imagenes/logo512x512.png",
-			"image2":"",
-			"image3":"" 
+			"logo":"img/Imagenes/patagonialogo.png",
+			"image": [
+				{"imagen":"img/Imagenes/patagonialogo.png"},
+				{"imagen":"img/Imagenes/patagonia1.png"},
+				{"imagen":"img/Imagenes/patagonia2.png"},
+				{"imagen":"img/Imagenes/patagonia3.png"},
+				{"imagen":"img/Imagenes/patagonia4.png"}
+			]
       	},
       	{
 			"id":28, 
 			"tipo":1,
-        	"name": "Kuntsmann",
+        	"name": "Kunstmann",
 	        "horario":"Abierto de 01:00 a 07:00",
-	        "direccion": "Juan Manuel de Rosas 523 (Av. Costanera), San Carlos de Bariloche, Río Negro",
+	        "direccion": "Juan Manuel de Rosas 523 (Av. Costanera), Bariloche",
 	        "telefono": " sin información",
 	        "descrip":"La Cantina es un tradicional y reconocido pub de la ciudad de Bariloche, donde el Rock y el Reggae se fusionan sin perder autenticidad.",
 	        "web":"www.lacantinabariloche.com.ar/",
@@ -582,16 +678,21 @@
         	"lat": -41.1325169,  
         	"lng": -71.3170585,
 			"iconMarKer": "img/cerve.png",
-			"image": "img/Imagenes/logo512x512.png",
-			"image2":"",
-			"image3":"" 
+			"logo":"img/Imagenes/kunstmannlogo.png",
+			"image": [
+				{"imagen":"img/Imagenes/kunstmann1.png"},
+				{"imagen":"img/Imagenes/kunstmann2.png"},
+				{"imagen":"img/Imagenes/kunstmann3.png"},
+				{"imagen":"img/Imagenes/kunstmann4.png"},
+				{"imagen":"img/Imagenes/kunstmann5.png"}
+			]
       	},
       	{
 			"id":29, 
 			"tipo":1,
         	"name": "Lowther",
 	        "horario":"Abierto de 01:00 a 07:00",
-	        "direccion": "Juan Manuel de Rosas 523 (Av. Costanera), San Carlos de Bariloche, Río Negro",
+	        "direccion": "Juan Manuel de Rosas 523 (Av. Costanera), Bariloche",
 	        "telefono": " sin información",
 	        "descrip":"La Cantina es un tradicional y reconocido pub de la ciudad de Bariloche, donde el Rock y el Reggae se fusionan sin perder autenticidad.",
 	        "web":"www.lacantinabariloche.com.ar/",
@@ -602,16 +703,19 @@
         	"lat": -41.1325169,  
         	"lng": -71.3170585,
 			"iconMarKer": "img/cerve.png",
-			"image": "img/Imagenes/logo512x512.png",
-			"image2":"",
-			"image3":"" 
+			"logo":"img/Imagenes/lowtherlogo.png",
+			"image": [
+				{"imagen":"img/Imagenes/lowther1.png"},
+				{"imagen":"img/Imagenes/lowther2.png"},
+				{"imagen":"img/Imagenes/lowther3.png"}
+			]
       	}, 
       	{
 			"id":30, 
 			"tipo":1,
         	"name": "Gilbert",
 	        "horario":"Abierto de 01:00 a 07:00",
-	        "direccion": "Juan Manuel de Rosas 523 (Av. Costanera), San Carlos de Bariloche, Río Negro",
+	        "direccion": "Juan Manuel de Rosas 523 (Av. Costanera), Bariloche",
 	        "telefono": " sin información",
 	        "descrip":"La Cantina es un tradicional y reconocido pub de la ciudad de Bariloche, donde el Rock y el Reggae se fusionan sin perder autenticidad.",
 	        "web":"www.lacantinabariloche.com.ar/",
@@ -622,16 +726,20 @@
         	"lat": -41.1325169,  
         	"lng": -71.3170585,
 			"iconMarKer": "img/cerve.png",
-			"image": "img/Imagenes/logo512x512.png",
-			"image2":"",
-			"image3":"" 
+			"logo":"img/Imagenes/gilbertlogo.png",
+			"image": [
+				{"imagen":"img/Imagenes/gilbertlogo.png"},
+				{"imagen":"img/Imagenes/gilbert1.png"},
+				{"imagen":"img/Imagenes/gilbert2.png"},
+				{"imagen":"img/Imagenes/gilbert3.png"}
+			]
       	},
       	{
 			"id":31, 
 			"tipo":1,
         	"name": "Pioneros",
 	        "horario":"Abierto de 01:00 a 07:00",
-	        "direccion": "Juan Manuel de Rosas 523 (Av. Costanera), San Carlos de Bariloche, Río Negro",
+	        "direccion": "Juan Manuel de Rosas 523 (Av. Costanera), Bariloche",
 	        "telefono": " sin información",
 	        "descrip":"La Cantina es un tradicional y reconocido pub de la ciudad de Bariloche, donde el Rock y el Reggae se fusionan sin perder autenticidad.",
 	        "web":"www.lacantinabariloche.com.ar/",
@@ -642,16 +750,20 @@
         	"lat": -41.1325169,  
         	"lng": -71.3170585,
 			"iconMarKer": "img/cerve.png",
-			"image": "img/Imagenes/logo512x512.png",
-			"image2":"",
-			"image3":"" 
+			"logo":"img/Imagenes/pioneroslogo.png",
+			"image": [
+				{"imagen":"img/Imagenes/pioneroslogo.png"},
+				{"imagen":"img/Imagenes/pioneros1.png"},
+				{"imagen":"img/Imagenes/pioneros2.png"},
+				{"imagen":"img/Imagenes/pioneros3.png"}
+			]
       	},
 		{
 			"id":32, 
 			"tipo":1,
         	"name": "Kilometro 4",
 	        "horario":"Abierto de 01:00 a 07:00",
-	        "direccion": "Juan Manuel de Rosas 523 (Av. Costanera), San Carlos de Bariloche, Río Negro",
+	        "direccion": "Juan Manuel de Rosas 523 (Av. Costanera), Bariloche",
 	        "telefono": " sin información",
 	        "descrip":"La Cantina es un tradicional y reconocido pub de la ciudad de Bariloche, donde el Rock y el Reggae se fusionan sin perder autenticidad.",
 	        "web":"www.lacantinabariloche.com.ar/",
@@ -662,16 +774,19 @@
         	"lat": -41.1325169,  
         	"lng": -71.3170585,
 			"iconMarKer": "img/cerve.png",
-			"image": "img/Imagenes/logo512x512.png",
-			"image2":"",
-			"image3":"" 
+			"logo":"img/Imagenes/kilometro4logo.png",
+			"image": [
+				{"imagen":"img/Imagenes/kilometro41.png"},
+				{"imagen":"img/Imagenes/kilometro42.png"},
+				{"imagen":"img/Imagenes/kilometro43.png"}
+			]
       	},
 		{
 			"id":33, 
 			"tipo":1,
         	"name": "Dagda",
 	        "horario":"Abierto de 01:00 a 07:00",
-	        "direccion": "Juan Manuel de Rosas 523 (Av. Costanera), San Carlos de Bariloche, Río Negro",
+	        "direccion": "Juan Manuel de Rosas 523 (Av. Costanera), Bariloche",
 	        "telefono": " sin información",
 	        "descrip":"La Cantina es un tradicional y reconocido pub de la ciudad de Bariloche, donde el Rock y el Reggae se fusionan sin perder autenticidad.",
 	        "web":"www.lacantinabariloche.com.ar/",
@@ -682,16 +797,20 @@
         	"lat": -41.1325169,  
         	"lng": -71.3170585,
 			"iconMarKer": "img/cerve.png",
-			"image": "img/Imagenes/logo512x512.png",
-			"image2":"",
-			"image3":"" 
+			"logo":"img/Imagenes/dagdalogo.png",
+			"image": [
+				{"imagen":"img/Imagenes/dagdalogo.png"},
+				{"imagen":"img/Imagenes/dagda1.png"},
+				{"imagen":"img/Imagenes/dagda2.png"},
+				{"imagen":"img/Imagenes/dagda3.png"}
+			]
       	},
 		{
 			"id":34, 
 			"tipo":1,
         	"name": "Mandela",
 	        "horario":"Abierto de 01:00 a 07:00",
-	        "direccion": "Juan Manuel de Rosas 523 (Av. Costanera), San Carlos de Bariloche, Río Negro",
+	        "direccion": "Juan Manuel de Rosas 523 (Av. Costanera), Bariloche",
 	        "telefono": " sin información",
 	        "descrip":"La Cantina es un tradicional y reconocido pub de la ciudad de Bariloche, donde el Rock y el Reggae se fusionan sin perder autenticidad.",
 	        "web":"www.lacantinabariloche.com.ar/",
@@ -702,16 +821,19 @@
         	"lat": -41.1325169,  
         	"lng": -71.3170585,
 			"iconMarKer": "img/cerve.png",
-			"image": "img/Imagenes/logo512x512.png",
-			"image2":"",
-			"image3":"" 
+			"logo":"img/Imagenes/mandelalogo.png",
+			"image": [
+				{"imagen":"img/Imagenes/mandela1.png"},
+				{"imagen":"img/Imagenes/mandela2.png"},
+				{"imagen":"img/Imagenes/mandela3.png"}
+			]
       	},
 		{
 			"id":35, 
 			"tipo":1,
         	"name": "La Cruz",
 	        "horario":"Abierto de 01:00 a 07:00",
-	        "direccion": "Juan Manuel de Rosas 523 (Av. Costanera), San Carlos de Bariloche, Río Negro",
+	        "direccion": "Juan Manuel de Rosas 523 (Av. Costanera), Bariloche",
 	        "telefono": " sin información",
 	        "descrip":"La Cantina es un tradicional y reconocido pub de la ciudad de Bariloche, donde el Rock y el Reggae se fusionan sin perder autenticidad.",
 	        "web":"www.lacantinabariloche.com.ar/",
@@ -722,16 +844,20 @@
         	"lat": -41.1325169,  
         	"lng": -71.3170585,
 			"iconMarKer": "img/cerve.png",
-			"image": "img/Imagenes/logo512x512.png",
-			"image2":"",
-			"image3":"" 
+			"logo":"img/Imagenes/lacruzlogo.png",
+			"image": [
+				{"imagen":"img/Imagenes/lacruzlogo.png"},
+				{"imagen":"img/Imagenes/lacruz1.png"},
+				{"imagen":"img/Imagenes/lacruz2.png"},
+				{"imagen":"img/Imagenes/lacruz3.png"}
+			]
       	},
 		{
 			"id":36, 
 			"tipo":1,
         	"name": "Brew Link Pueblo",
 	        "horario":"Abierto de 01:00 a 07:00",
-	        "direccion": "Juan Manuel de Rosas 523 (Av. Costanera), San Carlos de Bariloche, Río Negro",
+	        "direccion": "Juan Manuel de Rosas 523 (Av. Costanera), Bariloche",
 	        "telefono": " sin información",
 	        "descrip":"La Cantina es un tradicional y reconocido pub de la ciudad de Bariloche, donde el Rock y el Reggae se fusionan sin perder autenticidad.",
 	        "web":"www.lacantinabariloche.com.ar/",
@@ -742,16 +868,18 @@
         	"lat": -41.1325169,  
         	"lng": -71.3170585,
 			"iconMarKer": "img/cerve.png",
-			"image": "img/Imagenes/logo512x512.png",
-			"image2":"",
-			"image3":"" 
+			"logo":"img/Imagenes/brewlinkpueblologo.png",
+			"image": [
+				{"imagen":"img/Imagenes/brewlinkpueblo1.png"},
+				{"imagen":"img/Imagenes/brewlinkpueblo2.png"}
+			]
       	},
 		{
 			"id":37, 
 			"tipo":1,
         	"name": "BeerLand",
 	        "horario":"Abierto de 01:00 a 07:00",
-	        "direccion": "Juan Manuel de Rosas 523 (Av. Costanera), San Carlos de Bariloche, Río Negro",
+	        "direccion": "Juan Manuel de Rosas 523 (Av. Costanera), Bariloche",
 	        "telefono": " sin información",
 	        "descrip":"La Cantina es un tradicional y reconocido pub de la ciudad de Bariloche, donde el Rock y el Reggae se fusionan sin perder autenticidad.",
 	        "web":"www.lacantinabariloche.com.ar/",
@@ -762,16 +890,19 @@
         	"lat": -41.1325169,  
         	"lng": -71.3170585,
 			"iconMarKer": "img/cerve.png",
-			"image": "img/Imagenes/logo512x512.png",
-			"image2":"",
-			"image3":"" 
+			"logo":"img/Imagenes/beerland1.png",
+			"image": [
+				{"imagen":"img/Imagenes/beerland1.png"},
+				{"imagen":"img/Imagenes/beerland2.png"},
+				{"imagen":"img/Imagenes/beerland3.png"}
+			]
       	},
 		{
 			"id":38, 
 			"tipo":1,
         	"name": "Anina",
 	        "horario":"Abierto de 01:00 a 07:00",
-	        "direccion": "Juan Manuel de Rosas 523 (Av. Costanera), San Carlos de Bariloche, Río Negro",
+	        "direccion": "Juan Manuel de Rosas 523 (Av. Costanera), Bariloche",
 	        "telefono": " sin información",
 	        "descrip":"La Cantina es un tradicional y reconocido pub de la ciudad de Bariloche, donde el Rock y el Reggae se fusionan sin perder autenticidad.",
 	        "web":"www.lacantinabariloche.com.ar/",
@@ -782,16 +913,18 @@
         	"lat": -41.1325169,  
         	"lng": -71.3170585,
 			"iconMarKer": "img/cerve.png",
-			"image": "img/Imagenes/logo512x512.png",
-			"image2":"",
-			"image3":"" 
+			"logo":"img/Imagenes/anina1.png",
+			"image": [
+				{"imagen":"img/Imagenes/anina1.png"},
+				{"imagen":"img/Imagenes/anina2.png"}
+			]
       	},
 		{
 			"id":39, 
 			"tipo":1,
         	"name": "La Luna",
 	        "horario":"Abierto de 01:00 a 07:00",
-	        "direccion": "Juan Manuel de Rosas 523 (Av. Costanera), San Carlos de Bariloche, Río Negro",
+	        "direccion": "Juan Manuel de Rosas 523 (Av. Costanera), Bariloche",
 	        "telefono": " sin información",
 	        "descrip":"La Cantina es un tradicional y reconocido pub de la ciudad de Bariloche, donde el Rock y el Reggae se fusionan sin perder autenticidad.",
 	        "web":"www.lacantinabariloche.com.ar/",
@@ -802,9 +935,13 @@
         	"lat": -41.1325169,  
         	"lng": -71.3170585,
 			"iconMarKer": "img/cerve.png",
-			"image": "img/Imagenes/logo512x512.png",
-			"image2":"",
-			"image3":"" 
+			"logo":"img/Imagenes/lalunalogo.png",
+			"image": [
+				{"imagen":"img/Imagenes/lalunalogo.png"},
+				{"imagen":"img/Imagenes/laluna1.png"},
+				{"imagen":"img/Imagenes/laluna3.png"},
+				{"imagen":"img/Imagenes/laluna2.png"}
+			]
       	}
 	]
 }
