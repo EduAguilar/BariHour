@@ -1,31 +1,15 @@
-<style>
-
-p{
-  margin:3px 0px;
-}
-body, html{
-    height: 100%;
-}
-</style>
-<html>
-
-  <body>
-    <div class="slideshow-container">
-      <div id="contenido">
+<ion-content>
+    <div class="slideshow-container" style="height: 94%">
+      <div id="contenido" style="height: 50%" >
       </div>
 
       <div id="detalle" class="animateText">
 
-        <p><u>{{item.name}}</u></p>
+        <u>{{item.name}}</u>
         <p>{{item.telefono}}</p>
-        <p>{{item.direccion}}</p>
+        {{item.direccion}}
       </div>
-
-      <div id="mapa" style="height:200px;filter:grayscale(90%);-webkit-filter:grayscale(90%);"></div>
+            <div id="mapa" style="height:30%;filter:grayscale(90%);-webkit-filter:grayscale(90%);"></div>
     </div>
-  </body>
-</html>
 
-
-
-
+</ion-content>

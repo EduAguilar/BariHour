@@ -1,2 +1,2 @@
 # BariHour
-App Mobile para happy hour
+App Mobile para alertas de happy hour de Cervecerias, Bares y Pubs de la Ciudad de Bariloche.
