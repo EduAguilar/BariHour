@@ -1,15 +1,48 @@
-<ion-content>
-    <div class="slideshow-container" style="height: 94%">
-      <div id="contenido" style="height: 50%" >
+<ion-view>
+    
+      <div id="contenido" style="margin-top:8%; height: 30%" >
       </div>
-
-      <div id="detalle" class="animateText">
+<br>
+      <div id="detalle" class="animateText" style="height: 30%">
 
         <u>{{item.name}}</u>
         <p>{{item.telefono}}</p>
         {{item.direccion}}
+        <br>
+        <button class="button button-calm ion-social-twitter"></button>
+        <button class="button button-positive ion-social-facebook"></button>
+        <button class="button button-assertive ion-social-google"></button>
+        <!--
+<button icon="ion-social-facebook-outline"></button>
+<button icon="ion-map"></button>
+<button icon="ion-clipboard"></button>
+<button icon="ion-ios-book-outline"></button>
+-->
       </div>
-            <div id="mapa" style="height:30%;filter:grayscale(90%);-webkit-filter:grayscale(90%);"></div>
-    </div>
+      <ion-content>
+            <div id="mapa" style="top: 60%; height:30%; margin-bottom: 25px; filter:grayscale(90%);-webkit-filter:grayscale(90%);"></div>
+      </ion-content>
+  </ion-view>
+<!--
+<div class="list" style="top:6%;height: 89%">
 
-</ion-content>
+  <a href="#/app/mapa" >
+  <div class="background1" ng-click="myFunc(1)" title="Cervecerias" />  
+    <div class="textmenu">
+    <p>Cervecerias</p></div></div>
+  </a>
+
+  <a href="#/app/mapa" >
+  <div class="background2" ng-click="myFunc(2)" title="Bares" />  
+    <div class="textmenu">
+    <p>Bares</p></div></div>
+  </a>
+
+  <a href="#/app/mapa" >
+  <div class="background3" ng-click="myFunc(0)" title="Pubs, Bares y Cervecerias" />  
+    <div class="textmenu">
+    <p>Pubs, Bares y Cervecerias</p></div></div>
+  </a>
+  
+</div>
+-->

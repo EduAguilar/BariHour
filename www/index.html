@@ -47,10 +47,17 @@
      <script src="https://apis.google.com/js/platform.js" async defer></script>
 
     <!-- Firebase -->
+    <!--grupo
     <script src="https://www.gstatic.com/firebasejs/3.5.2/firebase.js"></script>
+    -->
+    <!-- Firebase mio-->
+    <script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
+
+
      <!-- AngularFire -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angularFire/2.1.0/angularfire.min.js"></script>
     <!-- acceso a firebaseapp.com -->
+    <!--
     <script>       
       var config = {
         apiKey: "AIzaSyB3NMnt06ajUaP0tPijHzQQV-vkGFIATe8",
@@ -61,7 +68,19 @@
       };
       firebase.initializeApp(config);
     </script>
-    
+    -->
+    <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyC--PvV1HgeiH9NWrPlxaKHKhmisjT12Mg",
+    authDomain: "barihours-ba710.firebaseapp.com",
+    databaseURL: "https://barihours-ba710.firebaseio.com",
+    storageBucket: "barihours-ba710.appspot.com",
+    messagingSenderId: "621972679884"
+  };
+  firebase.initializeApp(config);
+</script>
+
     <!-- Nuestros app's js -->
     <script src="js/app.js"></script>
     <script src="js/controllers.js"></script>

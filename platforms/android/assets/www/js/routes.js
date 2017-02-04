@@ -13,6 +13,11 @@ angular.module('starter.routes', [])
     abstract: true,
     templateUrl: 'templates/tabs.html',  
     })
+  .state('app.login', {
+    url: '/login',
+    templateUrl: 'templates/login.html',
+    controller: 'login'
+    })  
   .state('app.menu', {
     url: '/menu',
     templateUrl: 'templates/menu.html',

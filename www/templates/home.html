@@ -1,19 +1,23 @@
 <ion-view >
 	<ion-content class="animateText">
-		<form name="formLogin" ng-submit="doLogin()">
 		<div class="home">
-			<div class="go_button">
 
-				<a class="button button-clear button-dark" href="#/app/menu" ng-click="">
-      			<b id="font-size" >Entrar</b></a>
-				<br><br>
-				<button class="button button-calm ion-social-twitter"></button>
-				<button class="button button-positive ion-social-facebook"></button>
-				<button class="button button-assertive ion-social-google"></button>
-			
-			</div>
-		</div>
-		</form>
+			<ion-slides  class="slide-home" options="options" slider="">
+				<ion-slide-page>
+			      <div >Tu Guía cervecera de Bariloche</div>
+			    </ion-slide-page>
+			    <ion-slide-page>
+			      <div>Encuentra y ubica en el mapa lugares con promociones de happy hours</div>
+			    </ion-slide-page>
+			    <ion-slide-page>
+			      <div >Enterate de los mejores eventos de la ciudad</div>
+			    </ion-slide-page>
+			</ion-slides>		
+
+			<a class="button button-clear button-dark" href="#/login" ng-click="" id="font-size" >
+      		<b >Entrar</b></a>
+
+		</div>	
 	</ion-content>
 </ion-view >
 

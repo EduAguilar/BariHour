@@ -50,28 +50,38 @@ body { height: 100%; margin: 0px; padding: 0px }
   background-repeat: no-repeat;
   background-size: 100% 110%;
   background-position: center;
-  width: 100%;
+  width: 105%;
   height: 100%;
   margin: auto;
   z-index: 0;
   position: absolute;
+  
 }
-/*Posición botones de inicio*/
-.go_button {
-  transition: .5s ease;
-  top: 70%;
-  position:relative;
+.slide-home{
+  top:60%;
+  height: 25%;
+  width: 95%;
+  font-size:200%;
+  font-family: "Times New Roman", Times, red serifs;
   text-align: center;
+  line-height: 1;
+  font-style: bold;
+ position: absolute;
+  
+  
 }
 /*Para efecto de texto agrandandose*/
 #font-size{
   font-size: 30px;
-  width: 400px;
-  height: 100px;
+  width: 95%;  
   font-style: bold;
   font-family: "Times New Roman", Times, red serifs;
   -webkit-animation: mymove3 5s infinite; /* Chrome, Safari, Opera */
   animation: mymove3 5s infinite;
+  top: 85%;
+  transition: .5s ease;  
+  position:absolute;
+  text-align: center;
 }
 /* Chrome, Safari, Opera */
 @-webkit-keyframes mymove3 {50% {font-size: 50px;}}
@@ -115,8 +125,9 @@ div.background3 {
 }
 div.textmenu{
   line-height: 1;
-  font-size: 200%;
-  margin-top:16%;
+  font-size: 30px;
+  margin-top: 40px;
+  position: relative; 
   text-align: center;
   font-weight: bold;
   color: #000;
@@ -143,13 +154,15 @@ div.textmenu{
 .slideshow-container {
   width:100%;
   max-width: 100%;
-  height: auto; 
-  max-height: 100%;
-  margin-top: 24px;
+  height: 96%; 
+  max-height: 96%;
+  margin-top: 0px;
+  background: #000000; 
 }
 #contenido{
-  margin-top: 24px;
-  max-height: 50%;
+  margin-top: 0px;
+  max-height: 100%;
+  
 }
 /* Fading animation */
 .fade {
@@ -179,9 +192,10 @@ div.textmenu{
   text-align:center;
   font-family: 'Rockwell Extra Bold', 'Rockwell Bold', monospace;
   width: 100%;
-  margin-top: 4%;
+  margin-top: 0%;
   display: block;
   padding: 4%;
+
 }
 /*Animación para la transición page detalles*/
 @-webkit-keyframes animateInPrimary {
@@ -204,6 +218,7 @@ div.textmenu{
   animation: animateInSecondary ease-in 1;
   -webkit-animation-duration: 1500ms;
   animation-duraton: 1500ms;
+  white-space:normal;
 }
 /******************************************/
 
@@ -250,3 +265,33 @@ header div img {
   header { padding: 0; }
 }
 /******************************************/
+/* Login
+==================================*/
+.login {
+    background: url('../img/chopcervecero.gif');
+    background-repeat: no-repeat;
+    background-size: 100% 105%;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    z-index: 0;
+    position: absolute;
+}
+.app-icon {    
+    background: url('../img/logo512x512.png') center;
+    background-size: 100% 100%;
+    position: relative;
+    height: 50%;
+    top: -1%;
+    margin: auto;
+    width: 50%;
+}
+.button-social {
+  transition: .5s ease;
+  font-style: bold;
+  font-size: 20px;
+  line-height: 1.35;
+  position:relative;
+  text-align: center;
+}

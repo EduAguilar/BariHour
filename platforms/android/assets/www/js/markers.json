@@ -301,12 +301,12 @@
         	"lat": -41.1334991,  
         	"lng": -71.3142718,
 			"iconMarKer": "img/cerve.png",
-			"logo":"img/Imagenes/after7logo.png",
+			"logo":"img/Imagenes/after7logo.jpg",
 			"image": [
-				{"imagen":"img/Imagenes/afterlogo.png"},
-				{"imagen":"img/Imagenes/after71.png"},
-				{"imagen":"img/Imagenes/after72.png"},
-				{"imagen":"img/Imagenes/after73.png"}
+				{"imagen":"img/Imagenes/after7logo.jpg"},
+				{"imagen":"img/Imagenes/after7-1.jpg"},
+				{"imagen":"img/Imagenes/after7-2.jpg"},
+				{"imagen":"img/Imagenes/after7-3.jpg"}
 			]
       	},
     	{
@@ -325,12 +325,12 @@
         	"lat": -41.1337708,  
         	"lng": -71.3149442,
 			"iconMarKer": "img/cerve.png",
-			"logo":"img/Imagenes/wilkennylogo.png",
+			"logo":"img/Imagenes/Wilkennylogo.jpg",
 			"image": [
-				{"imagen":"img/Imagenes/wilkennylogo.png"},
-				{"imagen":"img/Imagenes/wilkenny1.png"},
-				{"imagen":"img/Imagenes/wilkenny2.png"},
-				{"imagen":"img/Imagenes/wilkenny3.png"}
+				{"imagen":"img/Imagenes/Wilkennylogo.jpg"},
+				{"imagen":"img/Imagenes/Wilkenny1.jpg"},
+				{"imagen":"img/Imagenes/Wilkenny2.jpg"},
+				{"imagen":"img/Imagenes/Wilkenny3.jpg"}
 			]
       	},
     	{
@@ -349,12 +349,12 @@
         	"lat": -41.1344459,  
         	"lng": -71.3057231,
 			"iconMarKer": "img/cerve.png",
-			"logo":"img/Imagenes/interviewlogo.png",
+			"logo":"img/Imagenes/interviewlogo.jpg",
 			"image": [
-				{"imagen":"img/Imagenes/interviewlogo.png"},
-				{"imagen":"img/Imagenes/interview1.png"},
-				{"imagen":"img/Imagenes/interview2.png"},
-				{"imagen":"img/Imagenes/interview3.png"}
+				{"imagen":"img/Imagenes/interviewlogo.jpg"},
+				{"imagen":"img/Imagenes/interview1.jpg"},
+				{"imagen":"img/Imagenes/interview2.jpg"},
+				{"imagen":"img/Imagenes/interview3.jpg"}
 			]
       	},	
     	{
@@ -373,12 +373,12 @@
         	"lat": -41.1328356,  
         	"lng": -71.3190773,
 			"iconMarKer": "img/cerve.png",
-			"logo":"img/Imagenes/diversionlogo.png",
+			"logo":"img/Imagenes/diversionlogo.jpg",
 			"image": [
-				{"imagen":"img/Imagenes/diversionlogo.png"},
-				{"imagen":"img/Imagenes/diversion1.png"},
-				{"imagen":"img/Imagenes/diversion2.png"},
-				{"imagen":"img/Imagenes/diversion3.png"}
+				{"imagen":"img/Imagenes/diversionlogo.jpg"},
+				{"imagen":"img/Imagenes/diversion1.jpg"},
+				{"imagen":"img/Imagenes/diversion2.jpg"},
+				{"imagen":"img/Imagenes/diversion3.jpg"}
 			]
       	},
       	{
@@ -397,11 +397,11 @@
         	"lat": -41.1344351,  
         	"lng": -71.3118764,
 			"iconMarKer": "img/cerve.png",
-			"logo":"img/Imagenes/eclipselogo.png",
+			"logo":"img/Imagenes/eclipselogo.jpg",
 			"image": [
-				{"imagen":"img/Imagenes/eclipselogo.png"},
-				{"imagen":"img/Imagenes/eclipse1.png"},
-				{"imagen":"img/Imagenes/eclipse2.png"},
+				{"imagen":"img/Imagenes/eclipselogo.jpg"},
+				{"imagen":"img/Imagenes/eclipse1.jpg"},
+				{"imagen":"img/Imagenes/eclipse2.jpg"},
 				{"imagen":"img/Imagenes/eclipse3.png"}
 			]
       	},
@@ -421,12 +421,12 @@
         	"lat": -41.1338032,  
         	"lng": -71.3113705,
 			"iconMarKer": "img/cerve.png",
-			"logo":"img/Imagenes/lelaclogo.png",
+			"logo":"img/Imagenes/lelaclogo.jpg",
 			"image": [
-				{"imagen":"img/Imagenes/lelaclogo.png"},
-				{"imagen":"img/Imagenes/lelac1.png"},
-				{"imagen":"img/Imagenes/lelac2.png"},
-				{"imagen":"img/Imagenes/lelac3.png"}
+				{"imagen":"img/Imagenes/lelaclogo.jpg"},
+				{"imagen":"img/Imagenes/lelac1.jpg"},
+				{"imagen":"img/Imagenes/lelac2.jpg"},
+				{"imagen":"img/Imagenes/lelac3.jpg"}
 			]
       	},
       	{
@@ -445,12 +445,12 @@
         	"lat": -41.1325169,  
         	"lng": -71.3170585,
 			"iconMarKer": "img/cerve.png",
-			"logo":"img/Imagenes/lacantinañogo.png",
+			"logo":"img/Imagenes/lacantinalogo.png",
 			"image": [
 				{"imagen":"img/Imagenes/lacantinalogo.png"},
-				{"imagen":"img/Imagenes/lacantina1.png"},
-				{"imagen":"img/Imagenes/lacantina2.png"},
-				{"imagen":"img/Imagenes/lacantina3.png"}
+				{"imagen":"img/Imagenes/lacantina1.jpg"},
+				{"imagen":"img/Imagenes/lacantina2.jpg"},
+				{"imagen":"img/Imagenes/lacantina3.jpg"}
 			]
       	},
       	{

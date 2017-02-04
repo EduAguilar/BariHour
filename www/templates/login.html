@@ -1,12 +1,48 @@
-<ion-modal-view>
-  <ion-header-bar>
-    <h1 class="title">Login</h1>
-    <div class="buttons">
-      <button class="button button-clear" ng-click="closeLogin()">Close</button>
-    </div>
-  </ion-header-bar>
-  <ion-content>
+<ion-modal-view class="animateText">
+  <ion-content class="login">
+    <div class="app-icon"></div>
+    <div class="button-social">
+
+    <b >Ingrese con</b><br>
+
+      <button class="button button-calm ion-social-twitter"></button>
+      <button class="button button-positive ion-social-facebook"></button>
+      <button class="button button-assertive ion-social-google"></button>
+      <br><br>
+      <button class="button icon-left ion-email button-positive">Email</button>
+      <button class="button icon-left ion-person-add button-positive">Registrarse </button>
+      <a href="#/app/menu" ng-click=""><button class="button icon-left ion-ios-eye button-positive">Anónimo </button></a>
+
+
+    </div>          
+
+
+    
+<!--
     <form ng-submit="doLogin()">
+
+
+    <div class="list" style="opacity: 0.4">
+        <ion-item >
+            <ion-label floating><b>Username</b></ion-label>
+            <ion-input highlight-color="balanced" type="text"  value=""></ion-input>
+        </ion-item>
+
+        <ion-item >
+            <ion-label floating><b>Password</b></ion-label>
+            <ion-input  highlight-color="balanced" type="password" value=""></ion-input>
+        </ion-item>
+    </div>
+
+    <br>
+    
+    <div padding>
+        <p class="button-entrar"><button ion-button color="light" round >Login</button></p>
+    </div>
+    
+
+
+    ++++++++
       <div class="list">
         <label class="item item-input">
           <span class="input-label">Username</span>
@@ -20,6 +56,8 @@
           <button class="button button-block button-positive" type="submit">Log in</button>
         </label>
       </div>
+    +++++++++
     </form>
+    -->
   </ion-content>
 </ion-modal-view>

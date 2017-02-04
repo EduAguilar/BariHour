@@ -22,8 +22,6 @@ angular.module('starter.controllers', [])
     MyService.setArray(response.data);
             })}
   })
-
-    
   
 
 .controller('MapCtrl', function($scope,$cordovaGeolocation, $http, $filter, MyService) {
@@ -102,12 +100,12 @@ angular.module('starter.controllers', [])
           });
           
          
-          //Descripcion cada marcador en su infoWindows
+          //Descripcion para cada marcador en su infoWindows
           var infoWindow = new google.maps.InfoWindow({
-            content:  '<div id= "contentInfo"><div id="name"> <b><u>'
-            +value.name+'</b></u></div>'+ value.horario+'<br>Happy de '+value.start+' a '+value.end+
-            '<br><div><a class="button button-clear button-dark" href="#/app/detalles"'
-            +'ng-click="detalle()"><b>Ver Mas</b></a> </div></div>'
+            content:  '<div id="name"> <b><u>'
+            +value.name+'</b></u><br>'+ value.horario+'<br>Happy de '+value.start+' a '+value.end+
+            '<br><a class="button button-clear button-dark" href="#/app/detalles"'
+            +'ng-click="detalle()"><b>Ver Mas</b></a></div>'
           })
 
           //Accion del click sobre cada marcador - Abrir/cerrar infoWindows
@@ -125,6 +123,8 @@ angular.module('starter.controllers', [])
           });
         }
       })
+
+      
       function CenterControl(controlDiv, map) {
 
               // Set CSS for the control border.
@@ -170,17 +170,26 @@ angular.module('starter.controllers', [])
 
 .controller('Lista',function($scope, MyService,$filter) {
   $scope.data=MyService.getArray();
+  var today = $filter('date')(new Date(),'HH:mm');
+
+var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+var diasSemana = new Array("Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado");
+var f=new Date();
+var fecha=(diasSemana[f.getDay()] + ", " + f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear());
+var day= diasSemana[f.getDay()];
+
   $scope.detalle = function(e) {
     MyService.setItem(e);
     }
-   $scope.bounce = function(x) { 
-  	      //Verifica si esta entre el horario y cambia el icono
-  	      var today = $filter('date')(new Date(),'HH:mm:ss');
-          if (today>x.start && today<x.end)
-            return 0;
-          else
-          	return 1;
-          }
+   $scope.bounce = function(id) { 
+        var item=$scope.data.marcadores[id];
+       
+          //Verifica si esta entre el horario y cambia el icono
+            if (today>item.start && today<item.end){
+              return true;}
+            else{
+              return false;}
+      }
 })
 
 
@@ -207,8 +216,8 @@ $scope.item=$scope.data.marcadores[$scope.id];
       marker.setMap($scope.mapa);
       var html;
         angular.forEach($scope.item.image, function(value, key){
-         html +=' <div class="mySlides fade"><img src='+
-         value.imagen+' class="set"></div>';
+         html +=' <div class="mySlides fade set"><img src='+
+         value.imagen+' ></div>';
         });
       document.getElementById('contenido').innerHTML=html;
       var slideIndex = 0;

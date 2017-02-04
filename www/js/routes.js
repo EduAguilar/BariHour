@@ -6,13 +6,20 @@ angular.module('starter.routes', [])
 
   .state('home', {
     url: '/home',
-    templateUrl: 'templates/home.html'
+    templateUrl: 'templates/home.html',
+    controller:'HomeCtrl'
   })
   .state('app', {
     url: '/app',
     abstract: true,
-    templateUrl: 'templates/tabs.html',  
+    templateUrl: 'templates/tabs.html',
+    controller:'tabs'
     })
+  .state('login', {
+    url: '/login',
+    templateUrl: 'templates/login.html',
+    controller: 'login'
+    })  
   .state('app.menu', {
     url: '/menu',
     templateUrl: 'templates/menu.html',

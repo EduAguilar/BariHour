@@ -1,6 +1,29 @@
 
 angular.module('starter.controllers', [])
 
+
+.controller('HomeCtrl', function($scope) {
+
+  $scope.options = {
+    autoplay: 6000,
+    initialSlide: 0,
+    loop: true,
+    speed: 300,
+  }
+})
+
+.controller('login', function($scope) {
+
+
+})
+
+.controller('tabs', function($scope) {
+
+
+})
+  
+
+
 .controller('MenuCtrl', function($scope,MyService,$http,$cordovaGeolocation) {
 
   $scope.myFunc = function(e) {
