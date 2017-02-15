@@ -2,7 +2,7 @@ angular.module('starter.services', [])
 
 
     .service('MyService', function () {
-        var property;
+        var property = null;
         var array;
         var item;
         var lat;

@@ -1,17 +1,17 @@
 <ion-modal-view class="animateText">
   <ion-content class="login">
     <div class="app-icon"></div>
-    <div class="button-social">
+    <div class="button-social" ng-controller="PopupCtrl">
 
     <b >Ingrese con</b><br>
 
-      <button class="button button-calm ion-social-twitter"></button>
-      <button class="button button-positive ion-social-facebook"></button>
-      <button class="button button-assertive ion-social-google"></button>
+      <button class="button button-calm ion-social-twitter" ng-click="showPopup()"></button>
+      <button class="button button-positive ion-social-facebook" ng-click="showPopup()"></button>
+      <button class="button button-assertive ion-social-google" ng-click="showPopup()"></button>
       <br><br>
-      <button class="button icon-left ion-email button-positive">Email</button>
-      <button class="button icon-left ion-person-add button-positive">Registrarse </button>
-      <a href="#/app/menu" ng-click=""><button class="button icon-left ion-ios-eye button-positive">Anónimo </button></a>
+      <button class="button icon-left ion-email button-positive" ng-click="showPopup()">Email</button>
+      <button class="button icon-left ion-person-add button-positive" ng-click="showPopup()">Registrarse </button>
+      <button class="button icon-left ion-ios-eye button-positive" ng-click="showConfirm()">Anónimo </button>
 
 
     </div>          

@@ -17,13 +17,6 @@ angular.module('starter.controllers', [])
 
 })
 
-.controller('tabs', function($scope) {
-
-
-})
-  
-
-
 .controller('MenuCtrl', function($scope,MyService,$http,$cordovaGeolocation) {
 
   $scope.myFunc = function(e) {
@@ -44,8 +37,7 @@ angular.module('starter.controllers', [])
     $http.get('js/markers.json').then(function(response){
     MyService.setArray(response.data);
             })}
-  })
-  
+  })  
 
 .controller('MapCtrl', function($scope,$cordovaGeolocation, $http, $filter, MyService) {
   var lat=MyService.getLat();
@@ -179,8 +171,6 @@ angular.module('starter.controllers', [])
               });
 
             }
-
-
               // Create the DIV to hold the control and call the CenterControl() constructor
               // passing in this DIV.
               var centerControlDiv = document.createElement('div');
@@ -204,6 +194,7 @@ var day= diasSemana[f.getDay()];
   $scope.detalle = function(e) {
     MyService.setItem(e);
     }
+
    $scope.bounce = function(id) { 
         var item=$scope.data.marcadores[id];
        
@@ -214,7 +205,6 @@ var day= diasSemana[f.getDay()];
               return false;}
       }
 })
-
 
 .controller('Detalles',function($scope, MyService,$ionicHistory) {
 $scope.data=MyService.getArray();
@@ -257,6 +247,86 @@ $scope.item=$scope.data.marcadores[$scope.id];
           slides[slideIndex-1].style.display = "block";
           setTimeout(showSlides, 3000); // Change image every 2 seconds
       }
+})
+
+.controller('PopupCtrl',function($scope, $ionicPopup, $timeout) {
+
+// Triggered on a button click, or some other target
+$scope.showPopup = function() {
+  $scope.data = {};
+
+  // An elaborate, custom popup
+  var myPopup = $ionicPopup.show({
+    template: '<label class="item item-input item-floating-label"><span class="input-label">Usuario</span><input type="text" ng-model="data.user" placeholder="Usuario"></label><br><label class="item item-input item-floating-label"><span class="input-label">Contraseña</span><input type="password" ng-model="data.password" placeholder="Contraseña"></label>',
+    /*'<input type="text" ng-model="data.user"><br><input type="password" ng-model="data.password">',*/
+    title: '<b>Iniciar Sesión</b>',
+    subTitle: 'Por favor ingrese sus datos',
+    scope: $scope,
+    buttons: [
+      {
+        text: '<b>Entrar</b>',
+        type: 'button-positive',
+        onTap: function(e) {
+          if (!$scope.data.password) {
+            //don't allow the user to close unless he enters wifi password
+            e.preventDefault();
+          } else {
+            return $scope.data.password;
+          }
+        }
+      },
+      { text: 'Cancelar' }
+    ]
+  });
+
+  myPopup.then(function(res) {
+    console.log('Tapped!', res);
+  });
+/*
+  $timeout(function() {
+     myPopup.close(); //close the popup after 10 seconds for some reason
+  }, 10000);*/
+ };
 
 
+ // A confirm dialog
+ $scope.showConfirm = function() {
+   var confirmPopup = $ionicPopup.confirm({
+     title: 'Atención',
+     template: 'Al ingresar como usuario anónimo, habran funcionalidades que no podra utilizar. Siempre recomendamos ingresar con usuario, en especial si es dueño de un local o administra uno. <br> Si aun así desea ingresar como anónimo haga click en <b>continuar</b> o en <b>cancelar</b> para iniciar sesion con algun usuario.',
+     cancelText: 'Cancelar',
+     okText: 'Continuar',
+   });
+
+   confirmPopup.then(function(res) {
+
+     if(res) {    
+      document.location.href = "#/app/menu";
+     
+      
+       console.log('You are sure');
+     } else {
+       console.log('You are not sure');
+     }
+   });
+ };
+
+ // An alert dialog
+ $scope.showAlert = function() {
+   var alertPopup = $ionicPopup.alert({
+     title: '¡Bienvenido a BariHour!',
+     template: 'Le damos la bienvenida a la aplicación, y esperamos que la disfrute.<br> Si tiene dudas sobre la aplicación siempre podrá acceder al menu de ayuda que se encuentra en la esquina superior derecha con el icono <button class="button button-clear button-stable  ion-information-circled"></button> <br> Para sugerencias o fallas puede reportarlas al correo barihours@gmail.com o contactarse con cualquiera del equipo de desarrollo.',
+     buttons: [
+      {
+        text: '<b>Continuar</b>',
+        type: 'button-positive',
+      },
+      { text: 'Cancelar' }
+    ]
+   });
+
+   alertPopup.then(function(res) {
+    console.log('Thank you for not eating my delicious ice cream cone');
+   });
+ };
 });

@@ -10,20 +10,28 @@ angular.module('starter.routes', [])
     controller:'HomeCtrl'
   })
   .state('app', {
+    cache: false,
     url: '/app',
     abstract: true,
     templateUrl: 'templates/tabs.html',
-    controller:'tabs'
+    controller: 'MenuCtrl'
     })
   .state('login', {
+    cache: false,
     url: '/login',
     templateUrl: 'templates/login.html',
     controller: 'login'
     })  
   .state('app.menu', {
+    cache: false,
     url: '/menu',
     templateUrl: 'templates/menu.html',
     controller: 'MenuCtrl'
+    })
+    .state('app.info', {
+    cache: false,
+    url: '/info',
+    templateUrl: 'templates/info.html',
     })
   .state('app.listaCerve', {
     cache: false,
@@ -33,8 +41,7 @@ angular.module('starter.routes', [])
     })
   .state('app.listaBar', {
     cache: false,
-    url: '/listaBar',
-    animation: 'slide-in',
+    url: '/listaBar',    
     templateUrl: 'templates/listaBar.html',
     controller: 'Lista'     
     })
@@ -43,7 +50,7 @@ angular.module('starter.routes', [])
     url: '/listaPubs',
     templateUrl: 'templates/listaPubs.html',
     controller: 'Lista'     
-    })  
+    })
   .state('app.detalles', {
     cache: false,
     url: '/detalles',
