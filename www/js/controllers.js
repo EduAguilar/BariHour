@@ -12,9 +12,199 @@ angular.module('starter.controllers', [])
   }
 })
 
-.controller('login', function($scope) {
+.controller('login',function($scope, $timeout, firebase, $state,$ionicModal){
 
+  firebase.auth().onAuthStateChanged(function(user) {
+    //muestra loadin hasta que termina de realizar el proceso de autenticacion
+    
+    if (user) {
+      //console.log('user onAuthStateChanged ', user)
+      // el usuario que esta logueado en firebase en la esta aplicacion
+      //para poder cambiar por ahora hay que eliminar el usuario
+      
+      $state.go('app.menu', {});
+    } else {
+      // No user is signed in.
+       //console.log ('no perteneca a firebase');
+    }
+  });
+  var user = firebase.auth().currentUser;
+  var name, email, photoUrl, uid;
+  //if (user) {
+  if (user != null) {
+    $state.go('app.menu', {});
+  } 
+  else {
+    // No user is signed in.
+     //$state.go('app.home', {});
+     $scope.login_social= function(google){
+    
+    //inicio con popup
+    var provider = new firebase.auth.GoogleAuthProvider();
+      //firebase.auth().signInWithPopup(provider)
+      firebase.auth().signInWithRedirect(provider)
+      .then(function (result){
+        //   This gives you a Google Access Token. You can use it to access the Google API.
+      var token = result.credential.accessToken;
+      // The signed-in user info.
+      var user = result.user;
+      // ...
+      //$state.go('app.menu', {});
 
+      })
+      .catch(function(error) {
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        // The email of the user's account used.
+        var email = error.email;
+        // The firebase.auth.AuthCredential type that was used.
+        var credential = error.credential;
+        console.error("Fallo en Authentication google:", error);
+         // ...
+      })
+      //$state.go('app.menu', {});
+
+      //inicio con redirect
+      /*var provider = new firebase.auth.GoogleAuthProvider();
+      firebase.auth().signInWithRedirect(provider);
+      firebase.auth().getRedirectResult().then(function(result) {
+        if (result.credential) {
+            // This gives you a Google Access Token. You can use it to access the Google API.
+          var token = result.credential.accessToken;
+          // ...
+        }
+        // The signed-in user info.
+        var user = result.user;
+        $state.go('app.menu', {});
+      })
+      .catch(function(error) {
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        // The email of the user's account used.
+        var email = error.email;
+        // The firebase.auth.AuthCredential type that was used.
+        var credential = error.credential;
+         // ...
+      });*/
+    }
+    $scope.loginFace=function(Facebook){
+        //console.log('face');
+        var provider = new firebase.auth.FacebookAuthProvider();
+        firebase.auth().signInWithRedirect(provider)
+
+        //firebase.auth().signInWithPopup(provider)
+        .then(function(result) {
+          // This gives you a Facebook Access Token. You can use it to access the Facebook API.
+          var token = result.credential.accessToken;
+          // The signed-in user info.
+          var user = result.user;
+          // ...
+        })
+        .catch(function(error) {
+          // Handle Errors here.
+          var errorCode = error.code;
+          var errorMessage = error.message;
+          // The email of the user's account used.
+          //var email = error.email;
+          // The firebase.auth.AuthCredential type that was used.
+          //var credential = error.credential;
+          if (errorCode === 'auth/wrong-password') {
+          alert('password incorrecto');
+        } else {
+          alert(errorMessage);
+        }
+          // ...
+        })
+      }
+      $scope.doLoginAction= function(creds){
+        firebase.auth().signInWithEmailAndPassword(creds.email, creds.password)
+        .catch(function(error) {
+          // Handle Errors here.
+          var errorCode = error.code;
+          var errorMessage = error.message;
+          console.error("Fallo en Authentication :", erroCode);
+          // ...
+        });
+      }// doLoginAction
+      $scope.doCreateUserAction=function(creds){
+        firebase.auth().createUserWithEmailAndPassword(creds.email, creds.password)
+        .catch(function(error) {
+          // Handle Errors here.
+          var errorCode = error.code;
+          var errorMessage = error.message;
+          // ...
+        });
+      }
+      $scope.doLoginAnonymus=function(){
+      firebase.auth().signInAnonymously()
+      .catch(function(error) {
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        // ...
+      });      
+      }
+    }//sale del else
+})
+
+.controller('userCtrl',function($scope, $timeout, firebase, $state){
+  var user = firebase.auth().currentUser;
+  var name, email, photoUrl, uid;
+  //if (user) {
+  if (user != null) {
+    //console.log ('userCtrl',user);
+    //$state.go('app.menu', {});
+    //muestro los valores de la base de datos firebase por consola
+    /*user.providerData.forEach(function (profile) {
+    console.log("Sign-in provider: "+profile.providerId);
+    console.log("  Provider-specific UID: "+profile.uid);
+    console.log("  Name: "+profile.displayName);
+    console.log("  Email: "+profile.email);
+    console.log("  Photo URL: "+profile.photoURL);
+  });*/
+
+    //User is signed in.
+    $scope.name = user.displayName;
+    $scope.email = user.email;
+    $scope.photoUrl = user.photoURL;
+    $scope.uid = user.uid;
+    //console.log('email: ',$scope.uid);
+  } 
+  else {
+    $state.go('home', {});
+  };
+
+  $scope.doLogout = function () {
+      $timeout(function () {
+        $state.go('home', {})
+      }, 1);
+
+      firebase.auth().signOut()
+      .then(function(result) {
+          // This gives you a Facebook Access Token. You can use it to access the Facebook API.
+          var token = null;
+          // The signed-in user info.
+          var user = null;
+          // ...
+        })
+      console.log("Saliendo (user)...");
+
+    }
+    $scope.cambiarUser=function(){
+      var user = firebase.auth().currentUser;
+    user.delete()
+    firebase.auth().signOut()
+    //console.log("cambiar user ...");
+    console.log("Saliendo (user)...");
+      /*console.log ('cambiar usuario');
+      var user= firebase.auth().currentUser;
+      console.log("borrado ...",user);
+      firebase.auth().signOut()
+      console.log("Cambiar ...",user);*/
+      $state.go('home', {})
+    }
 })
 
 .controller('MenuCtrl', function($scope,MyService,$http,$cordovaGeolocation) {
@@ -249,16 +439,16 @@ $scope.item=$scope.data.marcadores[$scope.id];
       }
 })
 
-.controller('PopupCtrl',function($scope, $ionicPopup, $timeout) {
+.controller('PopupCtrl',function($scope, $ionicPopup, $timeout, $state, $firebase) {
 
 // Triggered on a button click, or some other target
-$scope.showPopup = function() {
-  $scope.data = {};
+$scope.showPopup = function(a) {
+  $scope.creds = {};
+
 
   // An elaborate, custom popup
   var myPopup = $ionicPopup.show({
-    template: '<label class="item item-input item-floating-label"><span class="input-label">Usuario</span><input type="text" ng-model="data.user" placeholder="Usuario"></label><br><label class="item item-input item-floating-label"><span class="input-label">Contraseña</span><input type="password" ng-model="data.password" placeholder="Contraseña"></label>',
-    /*'<input type="text" ng-model="data.user"><br><input type="password" ng-model="data.password">',*/
+    template: '    <label class="item item-input item-floating-label"><span class="input-label" style="color: #FFFFFF">Usuario</span><input type="text" placeholder="Usuario" ng-model="creds.email" style="color: #FFFFFF"></label><label class="item item-input item-floating-label"><span class="input-label" style="color: #FFFFFF">Contraseña</span><input type="password" placeholder="Contraseña" ng-model="creds.password" style="color: #FFFFFF"></label>',
     title: '<b>Iniciar Sesión</b>',
     subTitle: 'Por favor ingrese sus datos',
     scope: $scope,
@@ -267,12 +457,14 @@ $scope.showPopup = function() {
         text: '<b>Entrar</b>',
         type: 'button-positive',
         onTap: function(e) {
-          if (!$scope.data.password) {
+          if (!$scope.creds.password) {
             //don't allow the user to close unless he enters wifi password
             e.preventDefault();
           } else {
-            return $scope.data.password;
+            return $scope.creds.email, $scope.creds.password;
           }
+
+
         }
       },
       { text: 'Cancelar' }
@@ -280,8 +472,27 @@ $scope.showPopup = function() {
   });
 
   myPopup.then(function(res) {
-    console.log('Tapped!', res);
+    if(res) {    
+
+        firebase.auth().signInWithEmailAndPassword(creds.email, creds.password)
+        .catch(function(error) {
+          // Handle Errors here.
+          var errorCode = error.code;
+          var errorMessage = error.message;
+          console.error("Fallo en Authentication :", erroCode);
+          // ...
+        });
+
+
+
+       console.log('You are sure');
+     } else {
+       console.log('You are not sure');
+     }
+
   });
+
+
 /*
   $timeout(function() {
      myPopup.close(); //close the popup after 10 seconds for some reason
@@ -305,8 +516,14 @@ $scope.showPopup = function() {
      
       
        console.log('You are sure');
-     } else {
-       console.log('You are not sure');
+     } else {        
+      $timeout(function () {
+        $state.go('login', {})
+      }, 1);
+
+      firebase.auth().signOut()
+      console.log("Saliendo (user)...");
+
      }
    });
  };

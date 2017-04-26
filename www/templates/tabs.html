@@ -17,7 +17,7 @@
   </ion-nav-bar>
 
   <!--Tab inferior -->
-    <div class="tabs tabs-dark tabs-icon-top">
+    <div class="tabs tabs-dark tabs-icon-top" ng-controller="userCtrl">
       <a class="tab-item" href="#/app/menu">
         <i class="icon ion-home"></i><b>Menu</b>
       </a>
@@ -30,7 +30,7 @@
       <a class="tab-item" href="#/app/listaPubs">
         <i class="icon ion-social-freebsd-devil"></i><b>Pubs</b>
       </a>
-      <a class="tab-item" href="">
+      <a class="tab-item" href="" ng-click="cambiarUser()">
         <i class="icon ion-person"></i><b>Perfil</b>
       </a>
     </div>

@@ -162,6 +162,7 @@ div.textmenu{
 #contenido{
   margin-top: 0px;
   max-height: 100%;
+  height: 30%;
   
 }
 /* Fading animation */
@@ -195,6 +196,8 @@ div.textmenu{
   margin-top: 0%;
   display: block;
   padding: 4%;
+    max-height: 100%;
+  height: 30%;
 
 }
 /*Animación para la transición page detalles*/
@@ -292,7 +295,9 @@ header div img {
   font-style: bold;
   font-size: 20px;
   line-height: 1.35;
-  position:relative;
+  position: relative;
+  margin-bottom: : 50%;
+  width: 100%;
   text-align: center;
 }
 
